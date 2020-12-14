@@ -1,0 +1,567 @@
+/* imported fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  height: 100%;
+}
+/* Body settings */
+  body {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-left: 0; margin-top: 0;
+    height: 100%;
+  }
+
+  .title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .title h1 {
+   font-size: 30px;
+   text-align: center;
+  }
+
+
+/*FADE IN AFFECT*/
+.fade-in {
+animation: fadeIn ease 2s;
+-webkit-animation: fadeIn ease 2s;
+-moz-animation: fadeIn ease 2s;
+-o-animation: fadeIn ease 2s;
+-ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+/* Footer settings */
+  footer {
+    font-family: "Nunito", sans-serif;
+    background-color: #f2e8c5;
+    font-size: 10px;
+    bottom: -10px;
+    
+  }
+
+  #mainfooter {
+    padding-top: 40px;
+    padding-bottom: 20px; 
+    bottom: 0;
+  }
+
+  footer h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  #socials {
+    margin-top: 10px; 
+    display: flex;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  #socials img {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+  }
+
+  #socials img:hover {
+    opacity: 0.7;
+  }
+
+  #socials img:first-of-type {
+    margin-right: 10px;
+  }
+
+  #guidedogicon img {
+    position: absolute; 
+    min-width: 120px; min-height: 100px;
+    width: 10vw; height: 10vw;
+
+  }
+
+
+/* Navigation */
+  nav {
+    background-color: #bb5a3a;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .logo {
+    margin-left: auto; margin-right: auto; 
+  }
+
+  nav .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu {
+    margin-left: auto; margin-right: auto; 
+  }
+
+  .menu ul {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+
+  .menu ul li {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  nav ul li a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+      color: black;
+      transition-duration: 0.7s;
+  }
+
+
+/* Popup */
+  .popup{
+    display: none;
+  }
+
+
+/* Home Page */
+  /* Seasonal image */
+    #seasonal-image {
+      visibility: hidden;
+      position: absolute;
+      width: 150px; height: 150px;
+      right: 1%;
+      top: 10%;
+    }
+
+  /* welcome section */
+    .welcome-image {
+      display: none;
+    }
+
+    .welcome h1 {
+      text-align: center; 
+      font-size: calc(3em + 2vw);
+    }
+
+  /* Section */
+    .section{
+      display: flex;
+      width: 80%;
+      margin-left: auto; margin-right: auto;
+      padding: 1em;
+      margin-bottom: 2em;
+      align-items: center;
+      max-width: 1100px;
+  
+    }
+
+  /* Section 2 */
+    .section.two{
+      background-color:  rgb(255, 243, 116, 0.7);
+    }
+
+    .section.two img {
+      width: 100px; height: auto;
+    }
+
+    .section.two .home-description {
+      margin-left: 1em;
+    }
+
+  /* section 3 */
+    .section.three {
+      background-color:  rgb(80, 255, 156, 0.7);
+    }
+
+    .section.three img {
+      width: 100px; height: auto;
+    }
+
+    .section.three .home-description {
+      margin-right: 1em; 
+    }
+
+  /* section 4 */
+    .section.four {
+      display: flex; 
+      flex-wrap: wrap;
+      width: calc(80% + 24px);
+      text-align: center;
+      padding: 0px;
+    }
+
+    .section.four #home-support {
+      flex: 1 200px;
+      background-color: rgb(30, 203, 225, 0.7);
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+
+    .section.four #home-joining {
+      flex: 1 200px; 
+      background-color: rgb(239, 155, 255, 0.7);
+      padding: 1em; 
+    }
+
+
+/* About Page */
+  #intro p {
+    text-align: center; 
+    font-size: 10px;
+  }
+
+  .employee {
+    margin-left: auto; margin-right: auto; 
+  }
+
+  .team {
+    display: flex;
+    margin-left: auto; margin-right: auto; margin-top: 4em;
+    align-items: center;
+  }
+
+  .profile {
+    flex: 2;
+  }
+
+  .about-description {
+    flex: 3;
+  }
+
+  .dot {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  .dot.one {
+    height: 30vw;
+    width: 30vw;
+    left: -10vw;
+    top: -4vw;
+    background-color: #1ecbe1;
+  }
+
+  .dot.two {
+    height: 25vw; min-width: 250px;
+    width: 25vw; min-height: 250px;
+    right: 0vw;
+    top: 30vw;
+    background-color: #fff374;
+  }
+
+  .dot.three {
+    height: 30vw; min-width: 200px;
+    width: 30vw; min-height: 200px;
+    left: -30vw;
+    top: 90vw;
+    background-color: #50ff9c;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 2em;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .dog {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dog img {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+  }
+
+  #join {
+    margin-top: 3em;
+    text-align: center;
+    background-color: #fff69c;
+    width: 80%;
+    max-width: 900px;
+    margin-left: auto; margin-right: auto;
+    padding: 1em;
+    line-height: 1.8em;
+    margin-bottom: 50px;
+  }
+
+
+/* SupportGDB Page */
+  .supportbody {
+    background-image: url("https://cdn.glitch.com/c12aff45-77c8-453c-a1c7-a5d715391fe5%2FUntitled%20design(2).png?v=1604893079246");
+    background-repeat: repeat-y;
+    background-size:  cover;
+  }
+
+  .support {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  #donate {
+    background-color: rgb(255, 243, 116, 0.7);
+  
+    width: 80%;
+    margin-left: auto; margin-right: auto; margin-top: 2em;
+    padding: 1em;
+  }
+
+  #donate img {
+    width: 100px; height: 100px;
+  }
+
+  #volunteer {
+    background-color: rgb(80, 255, 156, 0.7);
+    width: 80%;
+    margin-left: auto; margin-right: auto; margin-top: 2em;
+    padding: 1em;
+  }
+
+  #volunteer img {
+    width: 150px;
+    height: auto;
+    margin-top: 2em;
+  }
+
+  #shop {
+    background: rgb(30, 203, 225, 0.7);
+    width: 80%;
+    margin-left: auto; margin-right: auto; margin-top: 2em;
+    padding: 1em;
+  }
+
+  #events {
+    background: rgb(239, 155, 255, 0.7);
+    width: 80%;
+    margin-left: auto; margin-right: auto; margin-top: 2em;
+    padding: 1em;
+  }
+  
+@media screen and (min-width: 500px) {
+  
+  body {
+    font-size: 20px; 
+  }
+  .title h1 {
+    font-size: calc(2.5em + 1vw);
+   }
+
+
+  /* Navigation */
+    nav .logo img{
+      width: 7vw;
+      height: 7vw;
+      min-width: 80px; 
+      min-height: 80px;
+    }
+
+    .menu ul li {
+      margin: 10px;
+    }
+
+
+  /* Popup */
+    .popup {
+      display: inline-block;
+      margin-top: 0px;
+      background-color: #986C43;
+      margin-left: 3vw;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
+
+    .popup img {
+      border-radius: 50%;
+      width: 8vw;
+      height: 8vw;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 5px;
+      min-width: 70px; min-height: 70px; max-width: 100px; max-height: 100px;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .popup h2 {
+      font-family: "Times", sans-serif;
+      font-size: 17px;
+      color: white;
+      text-align: center;
+      }
+
+
+  /* Footer */
+    footer ul li img {
+      width: 40px; 
+      height: 40px;
+    }
+
+
+  /* Home page */ 
+    .welcome h1 {
+      margin-top: -100px;
+    }
+
+    .section img {
+      min-width: 160px;
+      width: 20vw;
+      max-width: 250px;
+    }
+  
+    .section.four {
+      align-items: stretch;
+    }
+
+    .section.four #home-support {
+      margin-bottom: 0;
+    }
+
+
+  /* About Page */
+    #intro {
+      width: 90%;
+      max-width: 1300px;
+      padding-top: 10px;
+      margin-left: auto; margin-right: auto;
+    }
+
+    #intro p {
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .team {
+      align-items: center;
+    }
+
+    .dog {
+      margin-top: 60px;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      margin-right: 3em;
+    }
+
+    .description {
+      padding: 1em;
+    }
+
+    .employee {
+      margin-top: 3em;
+    }
+
+
+}
+
+
+/* layout for computer */
+
+@media screen and (min-width: 850px) {
+    
+  /* Home page */
+    .home-description h2, .four h2{
+      font-size: calc(1em + 20px);
+    }
+
+    .home-description p, .four p{
+      font-size: calc(1em + 10px);
+    }
+    
+    #seasonal-image {
+      visibility: visible;
+    }
+
+  
+  /* About page */
+    .employee {
+      max-width: 90%;
+      display: flex;
+    }
+
+    .team {
+      flex: 3;
+      margin-top: 0;
+    }
+
+    .dog {
+      flex: 1;  
+    }
+
+    .dot.three {
+      display: none;
+    }
+  
+  
+  /* SupportGDB page */
+    .support {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+      margin-left: auto; margin-right: auto; 
+    }
+
+    #donate, #volunteer, #shop, #events {
+      flex: 1 300px;
+      margin: 1em;
+    }
+
+
+}
+

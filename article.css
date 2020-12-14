@@ -1,0 +1,95 @@
+section {
+    margin-left: auto; margin-right: auto; margin-bottom: 3em;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0;
+  }
+  
+  article {
+   border: 1px solid #a9aaa8;
+   margin: 1em;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  article::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  article .image1{
+    width: 150px; height: 180px;
+    float: left;
+    margin-right:  10px; 
+    
+  }
+  
+  
+  article:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    transition-duration: 0.5s;
+  }
+  
+  article a {
+    text-decoration: none;
+    color: black;
+  } 
+  
+  article a:hover {
+    color: #c97400;
+  }
+  
+  
+  .article-info {
+   margin-left: 10px; margin-right: 8px;
+  }
+  
+  .article-info h2 {
+    margin-top: 10px;
+  }
+  
+  .article-info p {
+    color: grey;
+  }
+  
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; margin-bottom: 5px;
+  }
+  
+  .author img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  
+  }
+  
+  .name h3{
+   font-size: 12px;
+   margin-left: 1em;
+  }
+  
+  article h4 {
+    font-size: 13px; 
+    color: grey; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  @media screen and (min-width: 1050px) {
+    
+    article .image1 {
+      width: 250px;
+      height: auto;
+    }
+    
+  
+    .info .author img {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    
+  }
