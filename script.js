@@ -2,7 +2,7 @@
     to your site with Javascript */
 
 // prints "hi" in the browser's dev tools console
-function sharePost() {
+function sharePost(link) {
    
-    alert("Copy this link: \n    http://pup-talk.com/article1.html");
+    alert("Copy this link: \n " + link);
   }

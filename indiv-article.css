@@ -94,19 +94,44 @@
   
   /* Article 1 */
   
-   #a1 #img1 {
+  #a1 .img1 {
       width: 50%; height: auto;
       float: left;
       margin-right: 1em;
     }
   
-  #a1 #img2 {
+  #a1 .img2 {
     max-width: 500px; 
     height: auto; 
     width: 70%;
     margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em;
     display: block;
   }
+
+   /* Article 2 */
+
+  figure {
+    width: 35%; height: auto;
+    float: left;
+    margin-right: 1em; margin-left: 0px;
+  }
+
+  figure .img1 {
+    width: 100%;
+  }
+
+  figure figcaption {
+    font-size: 12px;
+  }
+
+  #a2 .img2 {
+    max-width: 350px; 
+    height: auto; 
+    width: 60%;
+    margin-left: 1em; 
+    float: right;
+  }
+
   
   
   
