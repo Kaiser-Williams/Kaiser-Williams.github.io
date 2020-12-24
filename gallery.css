@@ -3,6 +3,7 @@
     margin-right: auto; margin-left: auto; margin-bottom: 3em; padding-bottom: 2em;
     padding-top: 2em;
     background-color: white;
+    border-radius: 5px;
   }
   
   .gallery .gallerytitle {
