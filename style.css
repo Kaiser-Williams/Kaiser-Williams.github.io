@@ -298,16 +298,20 @@ animation: fadeIn ease 2s;
     background-color: #50ff9c;
   }
 
-  .founder {
+  .members {
+    width: 84%;
     margin-left: auto; margin-right: auto; margin-top: 3em;
-    width: 80%;
     max-width: 1100px;
+    padding: 0px;
+  }
+
+  .founder {
     background-color: white;
     padding: 1em;
     border-radius: 5px;
   }
 
-  .founder figure, .employees figure {
+  .founder figure, .employee figure {
     margin: 0;
     padding: none;
     font-weight: bold;
@@ -327,12 +331,6 @@ animation: fadeIn ease 2s;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .employees {
-    margin-left: auto; margin-right: auto; margin-top: 1em;
-    width: 84%;
-    max-width: 1140px;
-  } 
-
   .employee .person img {
     width: 60px;
     height: 60px; 
@@ -351,12 +349,7 @@ animation: fadeIn ease 2s;
     background-color: white;
     padding: 1em;
     border-radius: 5px;
-    margin-left: auto; margin-right: auto;
-  }
-
-  .employees .two {
     margin-top: 1em;
-    visibility: hidden;
   }
 
   #join {
@@ -534,11 +527,7 @@ animation: fadeIn ease 2s;
       height: 60px;
     }
 
-
-
-
 }
-
 
 /* layout for computer */
 
@@ -563,33 +552,37 @@ animation: fadeIn ease 2s;
       display: none;
     }
 
+    .members {
+      display: grid;
+      grid-template-areas: 
+      "founder founder"
+      "one two";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+
     .founder {
       display: flex;
+      grid-area: founder;
     }
     
     .founder .person {
       margin-right: 1em;
     }
-  
-    .employees {
-      display: flex; 
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
 
     .employee {
-      flex: 1;
+      margin: 0px;
     }
 
-    .employees .one {
-      margin-right: 1em;
-    }
-
-    .employees .two {
-      margin-top: 0px;
+    .members .one {
+      grid-area: one;
     }
     
-  
+    .members .two {
+      grid-area: two;
+      visibility: hidden;
+    }
+    
   /* SupportGDB page */
     .support {
       display: flex;
