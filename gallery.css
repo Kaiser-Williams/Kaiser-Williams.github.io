@@ -1,57 +1,57 @@
 .gallery {
-    width: 91%; max-width: 1400px;
-    margin-right: auto; margin-left: auto; margin-bottom: 3em; padding-bottom: 2em;
-    padding-top: 2em;
-    background-color: white;
-    border-radius: 5px;
-  }
-  
-  .gallery .gallerytitle {
-    width: 90%; margin-left: auto; margin-right: auto; 
-    display: flex;
-    align-items: center;
-  }
+  width: 91%; max-width: 1400px;
+  margin-right: auto; margin-left: auto; margin-bottom: 3em; padding-bottom: 2em;
+  padding-top: 2em;
+  background-color: white;
+  border-radius: 5px;
+}
 
-  .gallerytitle img {
-    display: inline;
-    width: 100px; height: auto;      
-  }
+.gallery .gallerytitle {
+  width: 90%; margin-left: auto; margin-right: auto; 
+  display: flex;
+  align-items: center;
+}
 
-  .gallerytitle h2 {
-    display: inline;
-    margin-top: auto; margin-bottom: auto;
-  }
+.gallerytitle img {
+  display: inline;
+  width: 100px; height: auto;      
+}
 
-  .gallery .row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em;
-  }
+.gallerytitle h2 {
+  display: inline;
+  margin-top: auto; margin-bottom: auto;
+}
 
+.gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em;
+}
+
+.gallery .column {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.gallery .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
   .gallery .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+      flex: 98%;
+      max-width: 48%;
+      padding: 0 4px;
+    }
+}
 
-  .gallery .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  @media screen and (min-width: 500px) {
-    .gallery .column {
-        flex: 98%;
-        max-width: 48%;
-        padding: 0 4px;
-      }
-  }
-
-  @media screen and (min-width: 850px) {
-    .gallery .column {
-        flex: 24%;
-        max-width: 24%;
-        padding: 0 4px;
-      }
+@media screen and (min-width: 850px) {
+  .gallery .column {
+      flex: 24%;
+      max-width: 24%;
+      padding: 0 4px;
+    }
 }

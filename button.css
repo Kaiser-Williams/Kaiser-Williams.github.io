@@ -1,58 +1,83 @@
-.button {
-    display: block;
-    margin-left: auto; margin-right: auto;
-    border-radius: 4px;
-    background-color: #bb5a3a;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    padding-left: 10px; padding-right: 10px;
-    min-width: 130px;
-    font-size: 0.8em;
-    transition: all 0.5s;
-    cursor: pointer;
+.button, .fade-button {
+  display: block;
+  margin-left: auto; margin-right: auto;
+  border-radius: 5px;
+  background-color: #bb5a3a;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding-left: 10px; padding-right: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button h3{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 15px; margin-bottom: 15px;
+}
+
+.button h3:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover h3 {
+  padding-right: 25px;
+}
+
+.button:hover h3:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transition-duration: 2s;
+}
+
+
+/* fade button */
+
+.fade-button {
+  padding-left: 35px; padding-right: 35px;
+}
+
+.fade-button h2 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 18px; margin-bottom: 18px;
+}
+
+.fade-button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+
+}
+
+@media screen and (min-width: 500px) {
+  .button h3 {
+    font-size: 16px;
   }
-  
-  .button h3{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: normal;
-    margin-top: 15px; margin-bottom: 15px;
+
+  .fade-button h2 {
+    font-size: 20px;
   }
-  
-  .button h3:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover h3 {
-    padding-right: 25px;
-  }
-  
-  .button:hover h3:after {
-    opacity: 1;
-    right: 0;
-  }
-  
-  .button:hover {
-    opacity: 0.8;
-    transition-duration: 2s;
-  }
-  
-  
-  @media screen and (min-width: 500px) {
-    .button h3 {
-      font-size: 16px;
-    }
-  }
-  
-  
+}
+

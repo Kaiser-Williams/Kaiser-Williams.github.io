@@ -5,6 +5,8 @@ section {
   padding: 0;
 }
 
+
+
 article {
  border: 1px solid #a9aaa8;
  margin: 1em;
@@ -19,12 +21,12 @@ article::after {
 }
 
 article .image1{
-  width: 150px; height: 180px;
+  width: 25%; min-width: 150px; max-width: 300px;
+  height: auto; 
   float: left;
   margin-right:  10px; 
   
 }
-
 
 article:hover {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
@@ -68,12 +70,12 @@ article a:hover {
 }
 
 .name h3{
- font-size: 12px;
+ font-size: 10px;
  margin-left: 1em;
 }
 
 article h4 {
-  font-size: 13px; 
+  font-size: 10px; 
   color: grey; 
   margin-top: 5px;
   margin-bottom: 5px;
@@ -82,8 +84,10 @@ article h4 {
 @media screen and (min-width: 1050px) {
   
   article .image1 {
-    width: 230px;
-    height: auto;
+    height: 100%;
+    max-height: 300px;
+    width: auto;
+    min-width:  none; max-width: 38%;
   }
   
 
@@ -91,6 +95,10 @@ article h4 {
     width:40px;
     height: 40px;
     border-radius: 50%;
+  }
+
+  .name h3, article h4 {
+    font-size: 12px;
   }
   
 }
